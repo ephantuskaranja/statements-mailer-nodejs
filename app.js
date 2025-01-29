@@ -32,8 +32,8 @@ const transporter = nodemailer.createTransport({
 
 
 // Folder paths
-const statementsDir = path.join(__dirname, "Statements");
-const successDir = path.join(__dirname, "successful_sent_statements");
+const statementsDir = path.join(__dirname, "../Statements");
+const successDir = path.join(__dirname, "../successful_sent_statements");
 
 // Helper function to send emails
 async function sendEmail(customerEmail, copyEmails, pdfPath) {
